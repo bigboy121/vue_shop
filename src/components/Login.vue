@@ -69,7 +69,6 @@ export default {
        // 1.将登陆成功之后的 token 保存到客户端的 sessionStorage 中
        //  1.1 项目中除了登陆之外的其他api接口，必须在登陆之后才能访问
        //  1.2 token 只应该在当前网站打开期间生效，所以将 token 保存在 sessionStorage 中
-       console.log(res);
        window.sessionStorage.setItem("token", res.data.token)
        // 2. 通过编程式导航跳转到后台主页，路由地址是 /home
        this.$router.push('/home')
