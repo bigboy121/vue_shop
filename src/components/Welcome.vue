@@ -1,6 +1,6 @@
 <template>
  <div>
-   <h3>欢迎👏👏👏</h3>
+   <h1>欢 迎 👏 👏 👏 </h1>
  </div>
 </template>
 
