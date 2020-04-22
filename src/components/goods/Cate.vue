@@ -310,7 +310,6 @@ export default {
     },
     // 监听删除分类数据按钮
     async selectCate(id) {
-      console.log(id);
       
       const confirmResult = await this.$confirm('此操作将永久删除该分类, 是否继续?', '提示', {
         confirmButtonText: '确定',
