@@ -6,39 +6,23 @@ import Welcome from '../components/Welcome'
 import Users from '../components/user/Users'
 import Rights from '../components/power/Rights'
 import Roles from '../components/power/Roles'
+import Cate from '../components/goods/Cate'
 
 Vue.use(VueRouter)
 
 const routes = [
-  {
-    path: '/',
-    component: Login
-  },
-  {
-    path: '/login',
-    component: Login
-  },
+  { path: '/', component: Login },
+  { path: '/login', component: Login },
   {
     path: '/home',
     component: Home,
     redirect: '/welcome',
     children: [
-      {
-        path: '/welcome',
-        component: Welcome
-      },
-      {
-        path: '/users',
-        component: Users
-      },
-      {
-        path: '/rights',
-        component: Rights
-      },
-      {
-        path: '/roles',
-        component: Roles
-      },
+      { path: '/welcome', component: Welcome },
+      { path: '/users', component: Users },
+      { path: '/rights', component: Rights },
+      { path: '/roles', component: Roles },
+      { path: '/categories', component: Cate },
     ]
   },
 ]
