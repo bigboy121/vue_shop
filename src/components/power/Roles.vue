@@ -204,7 +204,6 @@ export default {
       }
 
       this.roleList = res.data;
-      console.log(this.roleList);
     },
     // 监听添加角色按钮点击事件
     addRoleBtn() {
